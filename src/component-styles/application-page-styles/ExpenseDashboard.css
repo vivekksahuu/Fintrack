@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.subCategoryContainer select {
+  @apply border rounded py-2;
+}
+
+.subCategoryContainer select option {
+  @apply bg-black text-white;
+}

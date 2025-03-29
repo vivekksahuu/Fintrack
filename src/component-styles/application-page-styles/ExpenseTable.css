@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.thead {
+  @apply px-4 py-2 border;
+}
+
+.tdata {
+  @apply py-2 border capitalize;
+}
+
+input {
+  @apply text-white;
+}
+
+select {
+  @apply text-sm border rounded p-2;
+}
+
+option {
+  @apply bg-black;
+}
