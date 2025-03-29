@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@theme {
+  --font-geist: "Geist", sans-serif;
+}
+
+/* Base Styles */
+*,
+*::before,
+*::after {
+  @apply box-border font-geist;
+}
+
+*,
+html,
+body {
+  @apply scroll-smooth;
+}
+
+body,
+html {
+  @apply min-h-screen w-full scroll-smooth;
+}
+
+body {
+  @apply overflow-x-hidden 
+  bg-black;
+}
+
+a,
+button,
+input {
+  @apply cursor-pointer;
+}
+
+.gradient-border {
+  @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+input::file-selector-button {
+  @apply px-3 py-1 border border-[#808080] rounded-xl;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  @apply bg-white rounded cursor-pointer;
+}
