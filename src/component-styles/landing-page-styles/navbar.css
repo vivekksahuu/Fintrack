@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.nav-btn {
+  @apply bg-black 
+  text-lg lg:text-sm 2xl:text-2xl
+  text-white 
+  rounded 
+  p-3 py-1;
+}
+
+ul li a {
+  @apply py-1 px-2 border border-transparent 
+  transition-all duration-300 
+  hover:border-white rounded;
+}
+
+.nav-menu-container {
+  @apply flex lg:hidden;
+}

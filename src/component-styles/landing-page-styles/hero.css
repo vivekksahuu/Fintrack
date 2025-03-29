@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.blue-text {
+  @apply text-blue-500;
+}
