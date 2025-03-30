@@ -5,8 +5,7 @@ import "../../component-styles/landing-page-styles/hero.css";
 
 import { BsStars } from "react-icons/bs";
 import { FiArrowRight } from "react-icons/fi";
-// import fintrackVideo from "../../assets/Videos/fintrack.mp4";
-import LazyVideo from "./heroVideo";
+import LazyHeroVideo from "./LazyHeroVideo";
 
 const Hero = React.forwardRef((props, ref) => {
   return (
@@ -92,7 +91,7 @@ const Hero = React.forwardRef((props, ref) => {
         border border-white rounded-2xl 
         p-3"
         >
-          <LazyVideo src="/fintrack.mp4" />
+          <LazyHeroVideo src="/heroVideo.mp4" />
         </div>
       </div>
     </>

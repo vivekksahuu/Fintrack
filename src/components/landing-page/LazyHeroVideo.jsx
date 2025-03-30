@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const LazyLoadVideo = ({ src, poster }) => {
+const LazyHeroVideo = ({ src, poster }) => {
   const videoRef = useRef(null);
   const [showControls, setShowControls] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -56,4 +56,4 @@ const LazyLoadVideo = ({ src, poster }) => {
   );
 };
 
-export default LazyLoadVideo;
+export default LazyHeroVideo;
