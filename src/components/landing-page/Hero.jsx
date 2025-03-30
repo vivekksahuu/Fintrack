@@ -6,7 +6,7 @@ import "../../component-styles/landing-page-styles/hero.css";
 import { BsStars } from "react-icons/bs";
 import { FiArrowRight } from "react-icons/fi";
 // import fintrackVideo from "../../assets/Videos/fintrack.mp4";
-import LazyVideo from "./LazyHeroVideo";
+import LazyVideo from "./heroVideo";
 
 const Hero = React.forwardRef((props, ref) => {
   return (

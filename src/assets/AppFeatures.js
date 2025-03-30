@@ -6,11 +6,11 @@ import { RiPieChartBoxLine } from "react-icons/ri";
 import { TbPlayerTrackNext } from "react-icons/tb";
 
 import FormVideo from "/formVideo.mp4"
-import TableVideo from "/tableView.mp4"
-import EditDeleteVideo from "/editDelete.mp4"
-import SearchExpenseVideo from "/filterSort.mp4"
-import DashboardVideo from "/dashboard.mp4"
-import SearchInsightVideo from "/searchInsights.mp4"
+import TableVideo from "/expenseViewVideo.mp4"
+import EditDeleteVideo from "/editDeleteVideo.mp4"
+import SearchExpenseVideo from "/expenseSearchVideo.mp4"
+import DashboardVideo from "/dashboardVideo.mp4"
+import SearchInsightVideo from "/searchInsightsVideo.mp4"
 
 const appFeatures = [
     {
