@@ -6,7 +6,7 @@ import { RiPieChartBoxLine } from "react-icons/ri";
 import { TbPlayerTrackNext } from "react-icons/tb";
 
 import FormVideo from "/formVideo.mp4"
-import TableVideo from "/expenseViewVideo.mp4"
+import TableVideo from "/expensesViewVideo.mp4"
 import EditDeleteVideo from "/editDeleteVideo.mp4"
 import SearchExpenseVideo from "/expenseSearchVideo.mp4"
 import DashboardVideo from "/dashboardVideo.mp4"
