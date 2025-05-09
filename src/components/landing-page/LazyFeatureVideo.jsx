@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const LazyFeatureVideo = ({ src }) => {
   const videoRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -26,13 +27,25 @@ const LazyFeatureVideo = ({ src }) => {
     };
   }, []);
 
+  const handleCanPlayThrough = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <video
-      ref={videoRef}
-      src={src}
-      className=" w-full h-full object-contain"
-      muted
-    />
+    <div className="relative w-full h-full">
+      {isLoading && (
+        <div className="absolute inset-0 animate-pulse bg-gray-300 rounded-lg z-10" />
+      )}
+      <video
+        ref={videoRef}
+        src={src}
+        className={`w-full h-full object-contain transition-opacity duration-300 ${
+          isLoading ? "opacity-0" : "opacity-100"
+        }`}
+        muted
+        onCanPlayThrough={handleCanPlayThrough}
+      />
+    </div>
   );
 };
 

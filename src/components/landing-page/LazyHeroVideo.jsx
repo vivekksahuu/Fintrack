@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const LazyHeroVideo = ({ src, poster }) => {
+const LazyHeroVideo = ({ src }) => {
   const videoRef = useRef(null);
   const [showControls, setShowControls] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -39,17 +39,16 @@ const LazyHeroVideo = ({ src, poster }) => {
   return (
     <div className="relative w-full">
       {loading && (
-        <img
-          src="/heroImage.jpg"
-          alt="Loading preview"
-          className="w-full rounded-2xl absolute top-0 left-0"
-        />
+        <div className="absolute top-0 left-0 w-full h-full rounded-2xl bg-gray-300 animate-pulse z-10" />
       )}
       <video
         ref={videoRef}
         src={src}
-        className="rounded-2xl w-full"
-        onLoadedData={() => setLoading(false)} // When video is loaded, hide image
+        className={`rounded-2xl w-full transition-opacity duration-300 ${
+          loading ? "opacity-0" : "opacity-100"
+        }`}
+        onLoadedData={() => setLoading(false)}
+        muted
         {...(showControls ? { controls: true } : {})}
       />
     </div>
